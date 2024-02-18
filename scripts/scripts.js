@@ -21,6 +21,7 @@ function handleClickOnce(event) {
   selectedCount++; 
   const greenC = document.getElementById('greenCount');
   greenC.innerText = 40 - selectedCount;
+  
   const counter = document.getElementById('counter');
   counter.innerText = selectedCount;
   const value = card.querySelector('p').innerText;

@@ -12,7 +12,7 @@ for (let i = 0; i < cards.length; i++) {
 function handleClickOnce(event) {
   const card = event.currentTarget;
   btn.removeAttribute('disabled');
-  loginBtn.removeAttribute('disabled');
+//   loginBtn.removeAttribute('disabled');
   if (selectedCount === 4 || card.classList.contains('clicked')) {
     return; 
   }
@@ -99,12 +99,13 @@ btn.addEventListener('click', function () {
     }
 });
   
-const login = document.getElementById('login-form');
-    login.addEventListener('input', function(){
+const login = document.getElementById('login-form').addEventListener('input', function(){
     const userName = document.getElementById('userName').value;
     const number = document.getElementById('number').value;
+    const email = document.getElementById('email').value;
+    console.log(userName, number);
     const loginBtn = document.getElementById('loginBtn');
-    if(userName.length > 0 && number.length >= 11){
+    if(userName.length > 0 && number.length > 0 && email.length > 0){
         loginBtn.removeAttribute('disabled');
     }
     else {

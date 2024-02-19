@@ -11,7 +11,8 @@ for (let i = 0; i < cards.length; i++) {
 
 function handleClickOnce(event) {
   const card = event.currentTarget;
-
+  btn.removeAttribute('disabled');
+  loginBtn.removeAttribute('disabled');
   if (selectedCount === 4 || card.classList.contains('clicked')) {
     return; 
   }

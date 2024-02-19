@@ -138,8 +138,8 @@
         <!-- ph paribahan -->
 
         <section id="si" class="lg:mt-28 bg-[#F7F8F8] border-t-2 rounded-3xl border-[#1DD100]">
-            <hr class="mb-20 rounded-s-xl bg-[#1DD100]">
-            <div class="text-center mx-auto mb-12">
+            
+            <div class="text-center mx-auto mb-12 mt-10 lg:mt-20">
                 <h1 class="text-4xl mb-3 font-bold">S.I Paribahan</h1>
                 <p class="text-lg text-[#03071299] p-3 lg:pt-6">Yes, you can run unit tests and view the results directly
                     within the app. The <br> integrated testing features allow for streamlined.</p>
@@ -442,9 +442,9 @@
                             <p class="lg:ml-9 ml-5">BDT <span id="discountPrice">00</span></p>
                         </div>
                         <div id="input-hidden" class="mt-4 bg-[#FFFFFF] rounded-2xl lg:mr-24">
-                            <input id="input-field" class=" p-4 rounded-2xl outline-none " type="text"
+                            <input id="input-field" disabled="disabled" class=" p-4 rounded-2xl outline-none " type="text"
                                 placeholder="Have any coupon?">
-                            <button id="apply-btn" disabled="disabled" class="btn p-4 bg-[#1DD100] lg:ml-10 text-white">Apply</button>
+                            <button id="apply-btn" disabled="disabled" class="btn p-4 bg-[#1DD100] lg:ml-4 text-white">Apply</button>
                         </div>
 
                         <div class="font-inter font-medium grid grid-cols-2 pt-4">
@@ -457,21 +457,21 @@
                         <div class="space-y-3 mb-4">
                             <label for="" class="font-inter font-semibold ">Passenger Name*</label><br>
                             <input class="text-[#03071266] font-inter p-4 w-full border-2 outline-none rounded-xl"
-                                type="text" id="userName" placeholder="Enter Your Name" required="">
+                                type="text" id="userName"  placeholder="Enter Your Name" required="">
                         </div>
                         <div class="space-y-3 mb-4">
                             <label for="" class="font-inter font-semibold ">Phone Number*</label><br>
                             <input class="text-[#03071266] font-inter p-4 w-full border-2 outline-none rounded-xl"
-                                type="number" id="number" placeholder="Enter Your phone number" required="">
+                                type="number" id="number" disabled="disabled" placeholder="Enter Your phone number" required="">
                         </div>
                         <div class="space-y-3 mb-4">
                             <label for="" class="font-inter font-semibold ">Email ID</label><br>
-                            <input id="email" class="text-[#03071266] font-inter p-4 w-full border-2 outline-none rounded-xl"
+                            <input id="email"  class="text-[#03071266] font-inter p-4 w-full border-2 outline-none rounded-xl"
                                 type="text" placeholder="Enter Your email id" required="">
                         </div>
                         <button id="loginBtn" disabled="disabled" class="btn bg-[#1DD100] w-full text-white font-raleway font-semibold text-xl" onclick="my_modal_1.showModal()">Next</button>
                         <dialog id="my_modal_1" class="modal">
-                            <div class="modal-box mx-auto text-center lg:p-6 space-y-3 lg:pt-10 font-inter">
+                            <div class="modal-box mx-auto text-center lg:p-6 space-y-3 lg:pt-10 lg:m-0  font-inter">
                                 <div class="flex justify-center items-center "><img src="images/success.png" alt="">
                                 </div>
                                 <h4 class="text-[#1DD100] font-bold ">SUCCESS</h4>
@@ -517,7 +517,7 @@
                 </div>
             </div>
             <hr class="border-dashed lg:mt-16 mb-6 ">
-            <div class="flex justify-between lg:py-16 ">
+            <div class="flex justify-between lg:py-16 pb-8 ">
                 <div class="text-[#FFFFFFB3] font-inter">
                     <p>@all rights reserved, S-Ticket services limited.2024</p>
                 </div>
